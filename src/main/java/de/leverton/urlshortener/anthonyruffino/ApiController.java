@@ -26,7 +26,7 @@ public class ApiController {
 				"  -result: {url:\"/exampleId}\", id:\"\"exampleId\"");
 		addApiActionMessage(stringBuilder, "DELETE /api/delete?id=exampleId",
 				"  -result: {url:\"/exampleId}\", id:\"\"exampleId\"");
-		addApiActionMessage(stringBuilder, "GET /exampleId", "  -301 Redirect to www.example.com");
+		addApiActionMessage(stringBuilder, "GET /get/exampleId", "  -301 Redirect to www.example.com");
 
 		return stringBuilder.toString();
 	}
