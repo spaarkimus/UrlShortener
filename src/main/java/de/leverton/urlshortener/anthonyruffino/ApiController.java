@@ -20,11 +20,11 @@ public class ApiController {
 		stringBuilder.append("<br/>");
 		stringBuilder.append("<br/>");
 
-		addApiActionMessage(stringBuilder, "POST /api/add?url=www.example.com",
+		addApiActionMessage(stringBuilder, "POST /add?url=www.example.com",
 				"  -result: {url:\"/www.example.com}\", id:\"\"exampleId\"");
-		addApiActionMessage(stringBuilder, "PUT /api/update?id=exampleId,url=www.newexample.com",
+		addApiActionMessage(stringBuilder, "PUT /update?id=exampleId,url=www.newexample.com",
 				"  -result: {url:\"/exampleId}\", id:\"\"exampleId\"");
-		addApiActionMessage(stringBuilder, "DELETE /api/delete?id=exampleId",
+		addApiActionMessage(stringBuilder, "DELETE /delete?id=exampleId",
 				"  -result: {url:\"/exampleId}\", id:\"\"exampleId\"");
 		addApiActionMessage(stringBuilder, "GET /get/exampleId", "  -301 Redirect to www.example.com");
 
